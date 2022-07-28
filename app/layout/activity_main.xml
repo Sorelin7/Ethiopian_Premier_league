@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/scoreBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/material_dynamic_neutral100"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFEB3B"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableBottom="@drawable/adama_ketema"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Kedus St George"
+                android:textColor="#D5A06B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/goalsTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="0"
+                android:textColor="@color/purple_700"
+                android:textSize="56sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#D5A06B" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFEB3B"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableBottom="@drawable/addis_ababa_kenema"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Addis Ababa Ketema"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/goalsTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="0"
+                android:textColor="@color/purple_700"
+                android:textSize="56sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreBoard"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#457684"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/attemptsTeamA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="left"
+                android:paddingLeft="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Total Attempts"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/attemptsTeamB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingRight="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/onTargetTeamA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="left"
+                android:paddingLeft="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="On Target"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/onTargetTeamB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingRight="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#457684"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/offsidesTeamA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="left"
+                android:paddingLeft="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Offsides"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/offsidesTeamB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingRight="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cornersTeamA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="left"
+                android:paddingLeft="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corners"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/cornersTeamB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingRight="24dp"
+                android:text="0"
+                android:textColor="#6C949F" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#457684"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/yellowCardsTeamA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="left"
+                android:paddingLeft="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Yellow Cards"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/yellowCardsTeamB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingRight="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/redCardsTeamA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="left"
+                android:paddingLeft="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Red Cards"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/redCardsTeamB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingRight="24dp"
+                android:text="0"
+                android:textColor="@color/purple_700" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
